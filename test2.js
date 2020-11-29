@@ -11,3 +11,7 @@ var Van = function(loc) {
 Van.prototype.grap = function() {
   console.log("grap");
 };
+var ben = new Van(9);
+var loc=ben.loc
+ben.grap();
+ben.move();
