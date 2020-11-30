@@ -8,6 +8,7 @@ Car.prototype.move = function() {
 var Van = function(loc) {
   Car.call(this,loc)
 };
+Van.prototype = Object.create(Car.prototype);
 Van.prototype.grap = function() {
   console.log("grap");
 };
