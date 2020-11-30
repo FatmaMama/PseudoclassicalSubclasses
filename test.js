@@ -1,12 +1,11 @@
 var Car = function(loc) {
-  var obj = { loc: loc };
-  obj.move = function() {
-    obj.loc++;
-  };
-  return obj;
+  this.loc = loc;
+};
+Car.prototype.move = function() {
+  this.loc++;
 };
 
-var amy = Car(1);
+var amy = new Car(1);
 amy.move();
 var ben = Car(9);
 ben.move();
